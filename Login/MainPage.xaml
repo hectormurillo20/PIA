@@ -17,10 +17,10 @@
             <Image Grid.Row="0" Source="banco" Margin="60"/>
 
             <StackLayout Grid.Row="1" BackgroundColor="#045D82" Opacity="0.8" Margin="5">
-                <Label Text="Correo Electronico" TextColor="White"/>
-                <Entry TextColor="White"/>
+                <Label Text="Usuario" TextColor="White"/>
+                <Entry TextColor="White" x:Name="User"/>
                 <Label Text="Contraseña" TextColor="White"/>
-                <Entry TextColor="White" IsPassword="True"/>
+                <Entry TextColor="White" IsPassword="True" x:Name="Password"/>
             </StackLayout>
 
             <StackLayout Grid.Row="2" Orientation="Horizontal" Margin="5">

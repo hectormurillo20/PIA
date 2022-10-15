@@ -17,7 +17,14 @@ namespace Login
 
         private async void LogedInPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new LogedIn());
+            string user = User.Text;
+            string password = Password.Text;
+            if ((user == "hector.murillo") && (password == "admin"))
+            {
+                await Navigation.PushAsync(new LogedIn());
+            } else {
+                await DisplayAlert("Usuario no valido","Usuario o contraseña incorrectos","Aceptar");
+            }
         }
 
         private async void FPasswordPage(object sender, EventArgs e)
